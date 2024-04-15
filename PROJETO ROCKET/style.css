@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:white;
+    --bg-url: url(assets/bg-mobile.jpg);
+    --bg-background: rgba(43, 42, 42, 0.192); 
+    --bg-border: black;
+    --btn-light-bg-url: url(assets/moon-stars.svg)
+}
+
+.light{
+    --text-color:black;
+    --bg-url: url(assets/bg-mobile-light.jpg);
+    --bg-background: rgba(43, 42, 42, 0.192);
+    --bg-border: black;
+    --btn-light-bg-url: url(assets/sun-stars.svg) 
+}
+
+body{
+    /* tranformando todo o código em úníca linha
+    background-image: url(assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+     */
+
+    background: url(assets/bg-desktop.jpg) no-repeat top center/cover;
+
+}
+
+.light body{
+    /* tranformando todo o código em úníca linha
+    background-image: url(assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+     */
+
+    background: var(--br-url ) no-repeat top center/cover;
+}
+
+body *{
+    font-family: "Tilt Neon", sans-serif;
+    color: var(--text-color);
+}
+
+#container{
+    width: 360px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+
+}
+
+
+/* Profite - Estilização */
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 8px;
+}
+/* Swith ligh */
+
+#btn-light{
+    position: relative;
+    width: 68px;
+
+    margin: 4px auto;
+
+}
+
+#btn-light button{
+    width: 32px;
+    height: 32px;
+    background: white var(--btn-light-bg-url) no-repeat center;
+    border: var(--bg-border);
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.light #btn-light button{
+    right: 0;
+    left: initial;
+
+}
+
+#btn-light span{
+    width: 64px;
+    height: 24px;
+    border: 1px solid var(--text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: block;
+    border-radius: 9999px;   
+}
+
+/* Links */
+
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0;
+}
+
+ul li a{
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    display: flex;
+    /* alinha o texto no centro horizontal*/
+    justify-content: center;
+    /* alinha o texto no centro vertical*/
+    align-items: center;  
+    padding: 16px 24px;
+
+    text-decoration: none;
+    font-weight: 500;
+ 
+    transition: background 0.2s;
+}
+
+/* Quando o mouse passar por cima = Ativa */
+ul li a:hover {
+  
+    border: 1px solid var(--bg-border);
+    background-color: var(--bg-background);
+    transition: background 0.2s;
+}
+
+/* Icones estilização */
+
+#social-links {
+    display: flex;
+    gap: 16px;
+
+    padding: 32px 0;
+
+    font-size: 24px;
+    justify-content: center;
+}
+
+#social-links{
+    display: flex;
+    gap: 16px;
+
+    padding: 32px 0;
+
+    font-size: 24px;
+    justify-content: center;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover {
+    background-color: var(--bg-background);  
+}
+
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+footer a {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}

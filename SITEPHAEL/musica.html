@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--google fontes-->
+    <link rel="stylesheet" href="style.css">
+    <title>PHAEL</title>
+
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <div class="interface"> <!--interface-->
+            <div class="logo">
+                    <a href="inicio.html"><!--logo-->
+                        <img src="images/PHAEL-LOGO300.png" alt="Logo do Phael">
+                    </a><!--logo-->
+            </div>
+            <nav class="menu-desktop"> <!--Link do menu do site-->
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="musica.html">Músicas</a></li>
+                    <li><a href="bio.html">Biografia</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="btn-contato"> <!--Botãod e contato-->
+                <a href="contato.html">
+                    <button>Contato</button>
+                </a>
+            </div> 
+
+            <!------------- Menu do mobile-------------->
+
+            <div class="btn-abrir-menu" id="btn-menu"> <!-- icone abrir menu-->
+                <img src="images/lista.png" alt="Botão Abrir lista">
+            </div>    
+                
+            <div class="menu-celular" id="menu-celular">
+                
+                <div class="btn-fechar">
+                    <img src="images/close.png" alt="Botão fechar lista">
+                </div> <!-- botão fechar-->
+
+                <nav> <!--Link do menu do site-->
+                    <ul>
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="musica.html">Músicas</a></li>
+                        <li><a href="bio.html">Biografia</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        
+                    </ul>
+                </nav>
+                <div class="overlay-men" id="overlay-men">
+                    
+                </div>
+
+            </div><!-- Menu mobile-->
+      </div>  <!--fechamento da interface-->
+
+    </header>
+
+    <main>    
+        <section class="msuicas">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>MUSICAS</span></h2>
+                <br>
+                <br>
+                <div class="flex">
+                   
+                    <div class="especialidades-box"> <!--MUSICA CRAZY-->
+                        <i class="bi bi-boombox"></i>
+                        <div class="img-port" style="background-image: url(images/musica2.png);">
+                            <div class="overlay"> <a href="https://open.spotify.com/track/01yywIZxDwKbq9N3RNVdKX?si=ad9fee0e187842b5"> CRAZY </a> </div>                                         
+                        </div> <!-- Overlay-->
+                        <h3> Crazy</h3>
+                        <p> Foi uma das track mais ouvidas no spotify do Phael. Com mais de 20.000 plays no Spotify!</p>
+                        
+                    </div>
+
+                    <div class="especialidades-box"> <!--MUSICA TAKE-->
+                        <i class="bi bi-boombox"></i>
+                        <div class="img-port" style="background-image: url(images/musica1.png);">
+                            <div class="overlay"> <a href="https://open.spotify.com/track/3p3di0xn3SIvOSxoI3wNVf?si=7d7fa8f2d7e1433c"> TAKE </a> </div>              
+                        </div> <!-- Overlay-->
+                        <h3> Take</h3>
+                        <p> A música passou de 10.000 streams no spotify. Entrou na playlist editoriais no Spotify!</p>
+                    </div>
+
+                    <div class="especialidades-box"> <!--MUSICA GIRL-->
+                        <i class="bi bi-boombox"></i>
+                        <div class="img-port" style="background-image: url(images/musica3.png);">
+                            <div class="overlay"> <a href="https://open.spotify.com/track/0zRVIO4GWFugJk5taaym0f?si=eb0b206a63aa49e1"> GIRL </a> </div>              
+                        </div> <!-- Overlay-->
+                        <h3> Girl</h3>
+                        <p> A track foi no estilo Tech House. Com mais de 10.000 plays no Spotiy!</p>
+                    </div>
+
+                 </div>
+
+            </div>
+
+        </section><!--especialidades-->
+
+        <section class="especiliadades"> <!-- iframe-->
+            <div class="interface">
+                <h2 class="titulo"> PLAY<span>LIST </span></h2>
+                <div class="flex">
+
+                    <div class="especialidades-box">                
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1zWOPmDwXSO50211NJHi0g?utm_source=generator&theme=0" width="1000" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><<!-- iframe fechamento-->
+
+        <section class="musicas"><!--AIR MIX-->
+            <div class="interface">
+                
+                <h2 class="titulo"> AIR <span> MIX </span></h2>
+                
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/air1.png);">
+                        <div class="overlay"> <a href="https://youtu.be/-gxjgmVCJmg?si=QqbvbdbKOGcBnD-M"> AIR 1 </a> </div>
+                        
+                    </div>                  
+                    <div class="img-port" style="background-image: url(images/air2.png);">
+                        <div class="overlay"> <a href="https://youtu.be/hyJajJStAcE?si=uS61gNiBSHdIJbSG"> AIR 2 </a> </div>
+                    </div>    
+                    <div class="img-port" style="background-image: url(images/air3.png);">
+                        <div class="overlay"> <a href="https://youtu.be/OwCW1_wVzQs?si=9B-SLBkVjurOsYZj"> AIR 3 </a> </div>
+                    </div>  
+                    
+                </div>
+
+            </div>
+
+        </section><!--musicas-->
+
+
+    </main>
+    <footer><!--interface rodapé-->
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/PHAEL-LOGO300.png" alt="logo rodape">
+                    </div> <!--logo do rodape-->
+                    <div class="btn-social">
+                        <a href="https://instagram.com/phaeloff"><button><img src="images/instagram.png" alt="Icone Instagram"></button></a>
+                        <a href="https://www.youtube.com/@phael6592"><button><img src="images/youtube.png" alt="Icone Youtube"></button></a>
+                        <a href="https://open.spotify.com/intl-pt/artist/1zWOPmDwXSO50211NJHi0g?si=KZecbmhAQkuJqOzsddmO6Q"><button><img src="images/spotify.png" alt="Icone Spotify"></button></a>
+                    </div> <!--icones do rodape-->
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><img src="images/email.png" alt="Icone e-mail"> <a href="mailto:phael@promo@gmail.com"> phael@promo@gmail.com </a> </p>
+            </div>
+        </div><!--interface rodapé-->
+    
+    </footer>
+</body>
+</html>
